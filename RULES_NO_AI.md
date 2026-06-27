@@ -11,9 +11,9 @@ This course only works if you obey one rule: **do not use AI to think for you.**
 - Copy-pasting solutions from anywhere
 
 ## ✅ ALLOWED (this is real learning)
-- **Official documentation** (MDN for JavaScript: https://developer.mozilla.org/)
+- **Official Python documentation:** https://docs.python.org/3/
 - **Your own notes** and this course's guides
-- **A search engine** to look up *what a method does* — but NOT to find the full answer to your exercise
+- **A search engine** to look up *what a function does* — but NOT to find the full answer to your exercise
 - **Your own brain, paper, and pen** (your best tools)
 - Reading error messages slowly and figuring them out yourself
 
@@ -28,7 +28,7 @@ When AI writes your code, **you feel productive but learn nothing.** Your proble
 Follow this **15-minute rule** instead of reaching for AI:
 1. **Re-read the problem.** What is it *actually* asking? (2 min)
 2. **Write the steps in plain words** (your own language is fine), not code. (3 min)
-3. **Check the docs** for the specific tool you need. (3 min)
+3. **Check the Python docs** for the specific tool you need. (3 min)
 4. **Try something** — even a wrong attempt teaches you. (5 min)
 5. **Take a 2-minute break**, then look again with fresh eyes.
 

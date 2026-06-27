@@ -1,6 +1,6 @@
-# Cheatsheet — Problem-Solving Framework + JavaScript Basics
+# Cheatsheet — Problem-Solving Framework + Python Basics
 
-> Two things here: (1) the THINKING framework that matters more than any syntax, and (2) the JavaScript basics you'll use. When stuck, come here — NOT to AI.
+> Two things here: (1) the THINKING framework that matters more than any syntax, and (2) the Python basics you'll use. When stuck, come here — NOT to AI.
 
 ---
 
@@ -33,108 +33,124 @@ Memorize these 5 steps. Use them on EVERY problem. This is what separates a code
 
 ### 5. DEBUG & REFLECT
 - Read the error message slowly (it usually tells you the line + problem).
-- Add `console.log()` to see what your variables actually are.
+- Add `print()` to see what your variables actually are.
 - After it works: ask "could this be simpler/clearer?" Then write what you learned.
 
 > **The golden habit:** trace your code BY HAND on paper. Pretend you're the computer. Walk through each line with a real value. This builds the mental model AI can never give you.
 
 ---
 
-## ⚙️ PART 2: JavaScript Basics
+## 🐍 PART 2: Python Basics
+
+> Python uses **indentation** (spaces) to group code — no curly braces. Be consistent (4 spaces).
 
 ### Print to the screen
-```js
-console.log("Hello");   // shows text in the console
+```python
+print("Hello")        # shows text in the console
 ```
 
-### Variables
-```js
-let age = 25;        // can change later
-const name = "Adham"; // cannot change
+### Variables (no let/const — just a name = a value)
+```python
+age = 25
+name = "Adham"
+PI = 3.14159           # convention: UPPER_CASE means "treat as constant"
 ```
 
 ### Data types
-```js
-let num = 42;            // number
-let text = "hello";      // string
-let yes = true;          // boolean (true/false)
-let nothing = null;      // intentionally empty
-let notSet;              // undefined
+```python
+num = 42               # int (whole number)
+price = 9.99           # float (decimal)
+text = "hello"         # str (string)
+yes = True             # bool (True / False)
+nothing = None         # the "empty" value
+type(num)              # <class 'int'>
 ```
 
 ### Operators
-```js
-+  -  *  /  %        // math (% is remainder)
-=== !==              // equal / not equal (use these)
->  <  >=  <=         // comparison
-&&  ||  !            // and / or / not
+```python
++  -  *  /  //  %  **   # //=integer divide, %=remainder, **=power
+==  !=                  # equal / not equal
+>  <  >=  <=            # comparison
+and   or   not          # logical (not &&, ||, !)
 ```
 
-### Conditionals
-```js
-if (age >= 18) {
-  console.log("adult");
-} else {
-  console.log("minor");
-}
+### Conditionals (note the colon and indentation)
+```python
+if age >= 18:
+    print("adult")
+elif age >= 13:
+    print("teenager")
+else:
+    print("child")
 ```
 
 ### Loops
-```js
-for (let i = 0; i < 5; i++) {
-  console.log(i);        // 0 1 2 3 4
-}
+```python
+for i in range(5):       # 0 1 2 3 4
+    print(i)
 
-while (count > 0) {
-  count = count - 1;
-}
+for item in [10, 20, 30]:  # loop over a list directly
+    print(item)
+
+count = 5
+while count > 0:
+    print(count)
+    count = count - 1
 ```
 
 ### Functions
-```js
-function add(a, b) {
-  return a + b;
-}
-add(2, 3); // 5
+```python
+def add(a, b):
+    return a + b
 
-const greet = (name) => "Hi " + name;  // arrow function
+add(2, 3)   # 5
+
+greet = lambda name: "Hi " + name   # small inline function
 ```
 
-### Arrays (lists)
-```js
-let nums = [10, 20, 30];
-nums[0];          // 10 (first item)
-nums.length;      // 3
-nums.push(40);    // add to end
-for (let n of nums) { console.log(n); }
+### Lists (ordered collections — like arrays)
+```python
+nums = [10, 20, 30]
+nums[0]            # 10 (first item)
+len(nums)          # 3
+nums.append(40)    # add to end
+for n in nums:
+    print(n)
 ```
 
-### Objects (labeled data)
-```js
-let person = { name: "Adham", age: 25 };
-person.name;          // "Adham"
-person.age = 26;      // change a value
+### Dictionaries (labeled data — key/value pairs)
+```python
+person = {"name": "Adham", "age": 25}
+person["name"]        # "Adham"
+person["age"] = 26    # change a value
 ```
 
 ### Strings
-```js
-let s = "hello";
-s.length;             // 5
-s.toUpperCase();      // "HELLO"
-s.includes("ell");    // true
-s[0];                 // "h"
+```python
+s = "hello"
+len(s)            # 5
+s.upper()         # "HELLO"
+"ell" in s        # True
+s[0]              # "h"
+list(s)           # ['h','e','l','l','o']
+```
+
+### Getting input (for interactive programs)
+```python
+name = input("What's your name? ")   # reads text the user types
+number = int(input("Pick a number: "))  # convert text to a number
 ```
 
 ---
 
 ## 🔎 How to read an error
-1. Look at the **error type** (e.g. `ReferenceError`, `TypeError`).
-2. Look at the **line number** — go there.
-3. Read the message literally (`x is not defined` → you used `x` before creating it).
-4. Add `console.log()` before the error line to see your values.
+1. Read the **last line** first — it names the error type (e.g. `NameError`, `TypeError`, `IndentationError`).
+2. Python shows the **line number** — go there.
+3. Read the message literally (`name 'x' is not defined` → you used `x` before creating it).
+4. Add `print()` before the error line to see your values.
 
 ---
 
 ## The rule
 When stuck: **Framework first. Docs second. AI never** (in this course).
-Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+Docs: https://docs.python.org/3/

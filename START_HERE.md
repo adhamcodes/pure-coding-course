@@ -6,7 +6,7 @@ This explains how to use the Pure Coding course in the simplest way. Read this, 
 
 ## What is this?
 
-A **30-day course to teach you to code without AI** — and to actually understand what's happening under the hood. One lesson a day. By the end, you can sit at a blank screen and write a working program from your own brain.
+A **30-day course to teach you to code without AI** — in **Python** — and to actually understand what's happening under the hood. One lesson a day. By the end, you can sit at a blank screen and write a working program from your own brain.
 
 ## The big promise
 
@@ -21,7 +21,7 @@ Right now a blank code editor feels scary, like a blank exam page. In 30 days it
 2. **The Daily Log** = your worksheet with check-boxes.
    - Example: `Module_0_Foundations/Logs/Day_01.md`
 
-And one playground: each module's **`Exercises/`** folder — where you write your practice code.
+And one playground: each module's **`Exercises/`** folder — where you write your practice `.py` files.
 
 ---
 
@@ -33,15 +33,17 @@ And one playground: each module's **`Exercises/`** folder — where you write yo
 
 ---
 
-## How do I actually run code? (no setup needed to start)
+## How do I actually run Python? (zero setup to start)
 
-For the first lessons you need **nothing but your browser**:
-1. Open your web browser (Chrome, Edge, Firefox).
-2. Press **F12** (or right-click → Inspect) to open Developer Tools.
-3. Click the **Console** tab.
-4. Type: `console.log("Hello, I am coding")` and press Enter.
+For the first lessons you need **nothing installed** — use a free online Python runner:
+- The official one: https://www.python.org/shell/  (type code, press Enter)
+- Or an online editor like https://replit.com (make a free Python repl)
 
-That's it — you just ran code. Module 0 teaches you to set up a proper environment (Node + an editor) by Day 5.
+Type this and run it:
+```python
+print("Hello, I am coding")
+```
+That's it — you just ran code. **Module 0, Day 5** teaches you to install Python properly + an editor (VS Code) on your own computer.
 
 ---
 
@@ -52,7 +54,7 @@ pure-coding-course/
 ├── START_HERE.md          <- this file
 ├── README.md              <- the big plan
 ├── RULES_NO_AI.md         <- the no-AI rules (READ THIS)
-├── CHEATSHEET.md          <- problem-solving framework + JS basics
+├── CHEATSHEET.md          <- problem-solving framework + Python basics
 ├── _Templates/Daily_Log.md
 ├── Module_0_Foundations/      <- guide + Logs + Exercises
 ├── Module_1_Programming_Logic/
